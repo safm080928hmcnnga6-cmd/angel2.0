@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Tradiciones Mexicanas: Día de Muertos y la Catrina</title>
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(180deg, #fff3e0, #ffe0b2);
+        margin: 0; padding: 0; color: #333;
+    }
+    header {
+        background: linear-gradient(90deg, #8e24aa, #d81b60, #fdd835);
+        color: white; text-align: center; padding: 25px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    }
+    header h1 { margin:0; font-size:2.2em; letter-spacing:1px; }
+    header h2 { margin-top:6px; font-weight:400; font-size:1em; }
+
+    nav {
+        background: rgba(255,255,255,0.9); display:flex; gap:12px;
+        justify-content:center; padding:10px; position:sticky; top:0; z-index:50;
+    }
+    nav a {
+        text-decoration:none; color:#6d1b7b; font-weight:600;
+        padding:8px 12px; border-radius:8px;
+    }
+    nav a:hover { background:#fce4ec; transform:translateY(-2px); }
+
+    .papel-picado { text-align:center; margin:12px 0; }
+    .bandera { display:inline-block; width:60px; height:40px; margin:0 3px;
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+    }
+    .rosa{background:#ec407a}.naranja{background:#ffb300}.verde{background:#43a047}.azul{background:#29b6f6}.morado{background:#8e24aa}
+
+    main { padding:30px; line-height:1.7; max-width:1100px; margin:auto; }
+    section {
+        margin-bottom:40px; background: rgba(255,255,255,0.95);
+        border-radius:15px; padding:20px; box-shadow:0 6px 18px rgba(0,0,0,0.08);
+    }
+    section h2 { color:#8e24aa; margin-top:0; border-bottom:2px dashed #f06292; padding-bottom:6px; }
+
+    img { display:block; margin:16px auto; max-width:90%; border-radius:10px; border:3px solid #f06292; }
+    .boton { display:inline-block; background:#f06292; color:white; padding:10px 18px; border-radius:25px; text-decoration:none; margin-top:12px; cursor:pointer; border:none; }
+    .boton:hover { background:#ec407a; transform:scale(1.03); }
+
+    table { width:100%; border-collapse:collapse; margin-top:12px; }
+    th, td { border:1px solid #e0e0e0; padding:10px; text-align:left; vertical-align:middle; }
+    th { background:#fff3e0; color:#8e24aa; }
+    .small { font-size:0.9em; color:#555; }
+
+    .galeria { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-top:10px; }
+    .galeria img { width:200px; height:140px; object-fit:cover; border:2px solid #f06292; border-radius:8px; }
+
+    footer { background: linear-gradient(90deg, #d81b60, #8e24aa); color:white; text-align:center; padding:12px; position:sticky; bottom:0; margin-top:30px; }
+
+    @media (max-width:700px){
+        nav { flex-wrap:wrap; }
+        .bandera { width:40px; height:28px; }
+        .galeria img { width:45%; height:120px; }
+    }
+
+    /* Estilos del formulario */
+    form label { font-weight:600; color:#6d1b7b; }
+    form input, form textarea, form select {
+        width:100%; padding:10px; border:1px solid #ccc; border-radius:8px; margin-top:5px;
+        font-family:'Poppins',sans-serif;
+    }
+    #mensaje-enviado {
+        color:green; font-weight:700; text-align:center; margin-top:15px; display:none;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>🏵️ Tradiciones Mexicanas 🏵️</h1>
+    <h2>Día de Muertos — La Catrina — Lugares tradicionales</h2>
+</header>
+
+<nav>
+    <a href="#dia-de-muertos">Día de Muertos</a>
+    <a href="#origen-catrina">Origen Catrina</a>
+    <a href="#lugares">Lugares turísticos</a>
+    <a href="#consejos">Consejos</a>
+    <a href="#satisfaccion">Satisfacción</a>
+</nav>
+
+<div class="papel-picado" aria-hidden="true">
+    <div class="bandera rosa"></div>
+    <div class="bandera naranja"></div>
+    <div class="bandera verde"></div>
+    <div class="bandera azul"></div>
+    <div class="bandera morado"></div>
+    <div class="bandera rosa"></div>
+</div>
+
+<main>
+    <section id="dia-de-muertos">
+        <h2>🌺 Día de Muertos</h2>
+        <p>
+            El <strong>Día de Muertos</strong> se celebra los días 1 y 2 de noviembre. Combina tradiciones indígenas y católicas, con altares, comida, flores de cempasúchil y velas.
+        </p>
+        <img src="https://www.anahuac.mx/mexico/sites/default/files/styles/webp/public/noticias/TUR_Muertos_Patrimonio_Cultural_1.jpg.webp?itok=i4aOD24T" alt="Altar del Día de Muertos">
+    </section>
+
+    <section id="origen-catrina">
+        <h2>💀 Origen de la Catrina</h2>
+        <p>
+            La <strong>Catrina</strong> nació como <em>La Calavera Garbancera</em> de José Guadalupe Posada y fue popularizada por Diego Rivera. Representa la crítica social y la igualdad ante la muerte.
+        </p>
+        <img src="https://media.vogue.mx/photos/5d9fae82bbf1b400096dd243/master/w_1600%2Cc_limit/historia-de-la-catrina.jpg" alt="La Catrina">
+        <a class="boton" href="#lugares">Ver lugares tradicionales ⬇️</a>
+    </section>
+
+    <section id="lugares">
+        <h2>📍 Lugares turísticos tradicionales</h2>
+        <p>Destinos destacados con celebraciones muy representativas:</p>
+
+        <div class="galeria">
+            <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/15/b6/ee/6e.jpg" alt="Atlixco Puebla">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Ofrenda_Monumental_de_D%C3%ADa_de_Muertos_en_Huaquechula%2C_Puebla.jpg" alt="Huaquechula Puebla">
+            <img src="https://rosyramales.com/wp-content/uploads/2019/11/ALTAR-DE-MUERTOS.jpg" alt="Oaxaca de Juárez">
+            <img src="https://ambiancemagazine.mx/wp-content/uploads/2022/11/Tzintzuntzan-MichoacaCC81n-cementerio.jpg" alt="Tzintzuntzan Michoacán">
+            <img src="https://oem.com.mx/elsoldesanjuandelrio/img/26609415/1762107710/BASE_LANDSCAPE/480/image.webp" alt="Huichapan Hidalgo">
+        </div>
+
+        <!-- Tabla restaurada -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Lugar</th>
+                    <th>Estado / Ciudad</th>
+                    <th>Actividades tradicionales</th>
+                    <th>Costos aproximados</th>
+                    <th>Enlace / Reserva</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Atlixco – Valle de las Catrinas</td>
+                    <td>Puebla</td>
+                    <td>Exhibición de catrinas monumentales y desfiles</td>
+                    <td>Entrada libre; tours guiados ~$150-$400 MXN</td>
+                    <td><a href="https://www.caminoreal.com/blog/post/visita-el-valle-de-las-catrinas-en-atlixco-puebla" target="_blank">Guía Atlixco</a></td>
+                </tr>
+                <tr>
+                    <td>Huaquechula</td>
+                    <td>Puebla</td>
+                    <td>Altares monumentales y celebración comunitaria</td>
+                    <td>Gratis; tours ~$200-$500 MXN</td>
+                    <td><a href="https://tendenciaspuebla.com.mx/top-5-lugares-para-visitar-en-dia-de-muertos-en-puebla/" target="_blank">Top Puebla</a></td>
+                </tr>
+                <tr>
+                    <td>Oaxaca de Juárez</td>
+                    <td>Oaxaca</td>
+                    <td>Comparsas, altares, mercados artesanales</td>
+                    <td>Eventos libres; talleres y tours ~$100-$400 MXN</td>
+                    <td><a href="https://visitmexico.com/oaxaca" target="_blank">Gobierno de Oaxaca</a></td>
+                </tr>
+                <tr>
+                    <td>Tzintzuntzan</td>
+                    <td>Michoacán</td>
+                    <td>Altares, tapetes de aserrín, procesiones tradicionales</td>
+                    <td>Tours ~$150 - $600 MXN</td>
+                    <td><a href="https://visitmichoacan.com.mx" target="_blank">Visit Michoacán</a></td>
+                </tr>
+                <tr>
+                    <td>Huichapan</td>
+                    <td>Hidalgo</td>
+                    <td>Ofrendas monumentales y concursos de catrinas</td>
+                    <td>Gratis; tours opcionales ~$100 - $350 MXN</td>
+                    <td><a href="https://turismo.hidalgo.gob.mx" target="_blank">Turismo Hidalgo</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="small">Los precios son aproximados y pueden variar según temporada y operador.</p>
+    </section>
+
+    <section id="consejos">
+        <h2>📝 Consejos y costos prácticos</h2>
+        <ul>
+            <li>Reserva con anticipación: temporada alta entre finales de octubre y principios de noviembre.</li>
+            <li>Comparar operadores: usar plataformas confiables y revisar reseñas antes de contratar tours.</li>
+            <li>Presupuesto aproximado por persona: $500 - $2,000 MXN dependiendo del destino y servicios incluidos.</li>
+            <li>Materiales para ofrenda: pan de muerto, flores, velas, frutas y bebidas típicas.</li>
+        </ul>
+        <a class="boton" href="#dia-de-muertos">Volver arriba ⬆️</a>
+    </section>
+
+    <!-- NUEVA SECCIÓN: FORMULARIO DE SATISFACCIÓN -->
+    <section id="satisfaccion">
+        <h2>🗳️ Formulario de Satisfacción</h2>
+        <p>Tu opinión es muy importante para nosotros. Por favor, califica tu experiencia en esta página:</p>
+
+        <form id="form-satisfaccion">
+            <label>Nombre:</label>
+            <input type="text" name="nombre" required>
+
+            <label>Correo electrónico:</label>
+            <input type="email" name="correo" required>
+
+            <label>¿Qué te pareció la información presentada?</label>
+            <select name="calificacion" required>
+                <option value="">Selecciona una opción</option>
+                <option value="Excelente">Excelente</option>
+                <option value="Buena">Buena</option>
+                <option value="Regular">Regular</option>
+                <option value="Mala">Mala</option>
+            </select>
+
+            <label>Comentarios adicionales:</label>
+            <textarea name="comentarios" rows="5" placeholder="Escribe tus comentarios aquí..."></textarea>
+
+            <button type="submit" class="boton">Enviar formulario</button>
+        </form>
+
+        <div id="mensaje-enviado">✅ ¡Gracias! Tu formulario ha sido enviado con éxito.</div>
+    </section>
+</main>
+
+<footer>
+    © 2025 Tradiciones Mexicanas | Diseño By Diavloo 😈💀
+</footer>
+
+<script>
+document.getElementById('form-satisfaccion').addEventListener('submit', function(e){
+    e.preventDefault(); // Evita recargar la página
+    this.style.display = 'none'; // Oculta el formulario
+    document.getElementById('mensaje-enviado').style.display = 'block'; // Muestra mensaje
+});
+</script>
+
+</body>
+</html>
+
